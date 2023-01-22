@@ -5,12 +5,6 @@
 //  Created by Lera Savchenko on 21.01.23.
 //
 
-//
-//  ViewController.swift
-//  TrafficLightAppUIKit
-//
-//  Created by Lera Savchenko on 21.01.23.
-//
 
 import UIKit
 
