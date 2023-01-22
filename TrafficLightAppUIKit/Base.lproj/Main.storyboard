@@ -17,24 +17,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view alpha="0.29999999999999999" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dzu-PA-t1Q">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dzu-PA-t1Q">
                                 <rect key="frame" x="154" y="108" width="120" height="120"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="8R6-k6-32p"/>
+                                    <constraint firstAttribute="width" constant="120" id="Wlz-9A-IFA"/>
+                                </constraints>
                             </view>
-                            <view alpha="0.29999999999999999" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lWv-c0-Vii">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lWv-c0-Vii">
                                 <rect key="frame" x="154" y="254" width="120" height="120"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="Mhl-u1-CFo"/>
+                                    <constraint firstAttribute="height" constant="120" id="xJC-Sh-ocJ"/>
+                                </constraints>
                             </view>
-                            <view alpha="0.29999999999999999" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ghI-jO-unM">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ghI-jO-unM">
                                 <rect key="frame" x="154" y="400" width="120" height="120"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="3Ba-OK-pix"/>
+                                    <constraint firstAttribute="width" constant="120" id="DrU-NQ-INi"/>
+                                </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DhW-B9-t01">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DhW-B9-t01">
                                 <rect key="frame" x="150.33333333333334" y="774.33333333333337" width="127.66666666666666" height="54.666666666666629"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="START">
                                     <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="34"/>
@@ -46,6 +54,16 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="dzu-PA-t1Q" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="8Uv-2x-dRs"/>
+                            <constraint firstItem="ghI-jO-unM" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="IUt-9i-nY7"/>
+                            <constraint firstItem="DhW-B9-t01" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="L4y-qD-jrS"/>
+                            <constraint firstItem="ghI-jO-unM" firstAttribute="top" secondItem="lWv-c0-Vii" secondAttribute="bottom" constant="26" id="SHV-Ec-Rpk"/>
+                            <constraint firstItem="lWv-c0-Vii" firstAttribute="top" secondItem="dzu-PA-t1Q" secondAttribute="bottom" constant="26" id="aFq-2X-CON"/>
+                            <constraint firstItem="dzu-PA-t1Q" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="61" id="cUz-Xf-fUZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DhW-B9-t01" secondAttribute="bottom" constant="63" id="eg9-4K-HKO"/>
+                            <constraint firstItem="lWv-c0-Vii" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="usQ-aE-8nG"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="greenLight" destination="ghI-jO-unM" id="3cq-Yv-JYr"/>
