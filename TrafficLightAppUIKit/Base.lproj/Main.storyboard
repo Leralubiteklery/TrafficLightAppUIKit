@@ -17,24 +17,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view alpha="0.29999999999999999" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dzu-PA-t1Q">
-                                <rect key="frame" x="154" y="108" width="120" height="120"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
-                            </view>
-                            <view alpha="0.29999999999999999" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lWv-c0-Vii">
-                                <rect key="frame" x="154" y="254" width="120" height="120"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemYellowColor"/>
-                            </view>
-                            <view alpha="0.29999999999999999" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ghI-jO-unM">
-                                <rect key="frame" x="154" y="400" width="120" height="120"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor"/>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DhW-B9-t01">
-                                <rect key="frame" x="150.33333333333334" y="774.33333333333337" width="127.66666666666666" height="54.666666666666629"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="OFK-xB-Z3s">
+                                <rect key="frame" x="154" y="108" width="120" height="412"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dzu-PA-t1Q">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lWv-c0-Vii">
+                                        <rect key="frame" x="0.0" y="146" width="120" height="120"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ghI-jO-unM">
+                                        <rect key="frame" x="0.0" y="292" width="120" height="120"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="9bg-jz-SJp"/>
+                                    <constraint firstAttribute="height" constant="412" id="beZ-px-s21"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DhW-B9-t01">
+                                <rect key="frame" x="150.33333333333334" y="774.33333333333348" width="127.66666666666666" height="54.666666666666629"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="START">
                                     <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="34"/>
@@ -46,6 +51,11 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="DhW-B9-t01" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aUn-Av-4jN"/>
+                            <constraint firstItem="OFK-xB-Z3s" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="bPI-gY-w1W"/>
+                            <constraint firstItem="OFK-xB-Z3s" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="61" id="uFZ-YB-g8V"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="greenLight" destination="ghI-jO-unM" id="3cq-Yv-JYr"/>
