@@ -38,7 +38,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DhW-B9-t01">
-                                <rect key="frame" x="151.33333333333334" y="774.33333333333337" width="127.66666666666666" height="54.666666666666629"/>
+                                <rect key="frame" x="106" y="796.33333333333337" width="218" height="54.666666666666629"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="START">
                                     <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="34"/>
@@ -51,11 +51,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
                         <constraints>
-                            <constraint firstItem="DhW-B9-t01" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MvU-b4-4lo"/>
+                            <constraint firstItem="DhW-B9-t01" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Cop-2t-pYv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DhW-B9-t01" secondAttribute="bottom" constant="47" id="Mdd-5R-gVB"/>
+                            <constraint firstItem="DhW-B9-t01" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="218:932" id="Q2J-HA-Ue1"/>
                             <constraint firstItem="OFK-xB-Z3s" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.444924" id="ZMA-c6-qRG"/>
-                            <constraint firstItem="DhW-B9-t01" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aUn-Av-4jN"/>
                             <constraint firstItem="OFK-xB-Z3s" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="bPI-gY-w1W"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DhW-B9-t01" secondAttribute="bottom" constant="68.999999999999886" id="m2h-UI-rds"/>
                             <constraint firstItem="OFK-xB-Z3s" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="61" id="uFZ-YB-g8V"/>
                         </constraints>
                     </view>
@@ -68,7 +68,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="28.037383177570092" y="69.330453563714912"/>
+            <point key="canvasLocation" x="26.25" y="68.661971830985919"/>
         </scene>
     </scenes>
     <resources>
